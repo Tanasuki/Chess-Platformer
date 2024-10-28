@@ -6,7 +6,24 @@ canvas.height = 576
 
 const gravity = 0.5
 
-// Video Time:  30 min 2 seconds
+class Sprite {
+    constructor( {position , imageSrc} ) {
+        this.position = position
+        this.image = new this.image()
+        this.image.src = this.image
+    }
+
+    draw()  {
+        if (!this.image) return
+        c.drawImage(this.image, this.position.x, this.position.y)
+    }
+
+    update()  {
+        this.draw()
+    }
+}
+
+// Video Time:  50 min 15 seconds
 
 class Player{
     constructor(position){
@@ -54,6 +71,10 @@ const keys = {
         pressed: false,
     },
 }
+
+const background = new Sprite({
+
+})
 
 function animate() {
 window.requestAnimationFrame(animate)
