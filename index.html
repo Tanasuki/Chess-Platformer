@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Set the character encoding to UTF-8 -->
   <meta charset="utf-8">
+  <!-- Set the viewport for responsive design -->
   <meta name="viewport" content="width=device-width">
+  <!-- Title of the web page -->
   <title>Chess Platformer</title>
 </head>
 <style>
+  /* Set the background color of the body to black */
   body {
     background: black;
   }
+  /* Style for the canvas element */
   canvas {
+    /* Center the canvas on the page */
     margin: auto;
     display: block;
+    /* Set the width of the canvas to 80% of its container */
     width: 80%;
-}
+  }
 </style>
+<!-- Canvas element for rendering the game -->
 <canvas></canvas>
 
+<!-- Include external JavaScript files for utility functions and game classes -->
 <script src="./js/utils.js"></script>
 <script src="./js/classes/CollisionBlock.js"></script>
 <script src="./js/classes/Sprite.js"></script>
 <script src="./js/classes/Player.js"></script>
 <script src="./js/data/collisions.js"></script>
+<!-- Main JavaScript file for the game logic -->
 <script src="index.js"></script>
+</html>
